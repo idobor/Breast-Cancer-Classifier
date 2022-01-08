@@ -115,8 +115,8 @@ def my_sign(x):
 
 if __name__ =="__main__":
   data = load_data()
-  #X_train,X_test,y_train,y_test = train_test_split(data.data,data.target,test_size=0.2)
-  #find_best_svc_model(data)
-  #find_best_c_for_linear(data)
+  X_train,X_test,y_train,y_test = train_test_split(data.data,data.target,test_size=0.2)
+  find_best_svc_model(data)
+  find_best_c_for_linear(data)
   find_eta_with_SGD_hinge_loss(data,1000,100)
 
